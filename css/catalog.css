@@ -1,0 +1,38 @@
+/*1 секция*/
+.models{
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    color: #fff;
+}
+.models h1{
+    font-size: 30px;
+}
+.cars{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    background-color: #8b8a8a;
+    border-radius: 15px;
+    align-items: center;
+    transition: all 0.4s ease;
+    box-shadow: 4px 4px 20px rgba(155, 0, 0, 0.686);
+}
+.item:hover{
+    transform: scale(1.03);
+    box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.686);
+}
+.item img{
+    max-width: 400px;
+    width: 100%;
+}

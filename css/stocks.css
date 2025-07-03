@@ -1,0 +1,30 @@
+.hero{
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+}
+.hero h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.hero-container{
+    background-color: rgba(225, 225, 225, 0.086);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 8px 4px 25px rgba(155, 0, 0, 0.686);
+}
+.stocks ul{
+    list-style: disc;
+    padding-left: 20px;
+}
+.stocks ul li{
+    padding: 15px;
+}
+.stocks ul li::marker{
+    color: red;
+    font-size: 18px;
+}

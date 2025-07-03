@@ -1,0 +1,33 @@
+.about-us{
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+}
+.about-us h1{
+    font-size: 30px;
+}
+.about-us-content{
+    background-color: rgba(225, 225, 225, 0.086);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+    box-shadow: 4px 4px 25px rgba(155, 0, 0, 0.686);
+}
+.about-us-content p{
+    font-size: 18px;
+}
+.about-us-list ul{
+    list-style: disc;
+    padding: 15px;
+}
+.about-us-list ul li{
+    padding: 15px;
+    font-size: 18px;
+}
+.about-us-list ul li::marker{
+    color: red;
+}

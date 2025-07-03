@@ -1,0 +1,77 @@
+/*Сброс стилей*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+    background: transparent;
+}
+/*Стили для шапки*/
+header{
+    padding: 20px;
+    background-color: black;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.header-zag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.header-zag h1{
+    color: #fff;
+}
+.header-zag img{
+    width: 50px;
+    height: 50px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 18px;
+}
+/*стили для тела*/
+body{
+    background-color: black;
+}
+/*Стили для подвала*/
+footer{
+    padding: 20px;
+}
+.footer-zag{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-zag img{
+    width: 40px;
+    height: 40px;
+}
+.footer-zag span{
+    color: #fff;
+    font-size: 25px;
+}

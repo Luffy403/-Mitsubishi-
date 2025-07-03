@@ -1,0 +1,21 @@
+.contacts{
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+}
+.contacts h1{
+    font-size: 30px;
+}
+.contacts-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contacts-item h2{
+    padding-bottom: 20px;
+}
+.contacts-item span{
+    font-size: 20px;
+}
