@@ -6,7 +6,6 @@
 }
 .hero h1{
     font-size: 30px;
-    margin-bottom: 30px;
 }
 .hero-container{
     background-color: rgba(225, 225, 225, 0.086);
@@ -16,6 +15,7 @@
     flex-direction: column;
     gap: 40px;
     box-shadow: 8px 4px 25px rgba(155, 0, 0, 0.686);
+    margin: 30px auto;
 }
 .stocks ul{
     list-style: disc;
@@ -27,4 +27,28 @@
 .stocks ul li::marker{
     color: red;
     font-size: 18px;
+}
+/*Мобильная адаптация*/
+@media(max-width:400px){
+    .hero{
+        margin: 30px auto;
+    }
+    .hero h1{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .hero-container{
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: 4px 4px 15px rgba(155, 0, 0, 0.686);
+        gap: 20px;
+        padding: 20px;
+    }
+    .hero-container h2{
+        font-size: 18px;
+    }
+    .stocks ul li{
+        padding: 5px;
+        font-size: 14px;
+    } 
 }

@@ -11,7 +11,7 @@
     margin-top: 30px;
 }
 .services li{
-    background-color: #8b8a8a;
+    background-color: #6c6c6c;
     padding: 20px;
     border-radius: 15px;
     list-style-type: disc;
@@ -20,4 +20,22 @@
 }
 .services li::marker{
     color: red;
+}
+/*Мобильная адаптация*/
+@media(max-width:400px){
+    .container{
+        margin: 30px auto;
+    }
+    .container h1{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .services{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .services li{
+        font-size: 16px;
+        padding: 15px;
+    }
 }

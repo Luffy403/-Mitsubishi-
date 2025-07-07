@@ -26,7 +26,6 @@ header nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 .header-zag{
     display: flex;
@@ -58,7 +57,7 @@ body{
 }
 /*Стили для подвала*/
 footer{
-    padding: 20px;
+    padding: 30px;
 }
 .footer-zag{
     display: flex;
@@ -74,4 +73,41 @@ footer{
 .footer-zag span{
     color: #fff;
     font-size: 25px;
+}
+/*Мобильная адаптация*/
+@media (max-width:400px) {
+    /*Шапка*/
+    header{
+        padding: 10px;
+    }
+    header nav{
+        gap: 40px;
+    }
+    .header-zag{
+        gap: 5px;
+    }
+    .header-zag img{
+        width: 30px;
+        height: 30px;
+    }
+    .header-zag h1{
+        font-size: 18px;
+    }
+    header nav ul{
+        gap: 10px;
+    }
+    header nav ul li a{
+        font-size: 14px;
+    }
+    /*Подвал*/
+    footer{
+        padding: 10px;
+    }
+    .footer-zag img{
+        width: 30px;
+        height: 30px;
+    }
+    .footer-zag span{
+        font-size: 18px;
+    }
 }

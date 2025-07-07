@@ -22,7 +22,7 @@
     max-width: 350px;
     width: 100%;
     padding: 20px;
-    background-color: #8b8a8a;
+    background-color: #6c6c6c;
     border-radius: 15px;
     align-items: center;
     transition: all 0.4s ease;
@@ -35,4 +35,31 @@
 .item img{
     max-width: 400px;
     width: 100%;
+}
+/*Мобильная адаптация*/
+@media(max-width:400px){
+    .models{
+        margin: 30px auto;
+    }
+    .models h1{
+       font-size: 20px;
+       margin-left: 20px;
+    }
+    .cars{
+        width: 75%;
+        margin: 20px auto;
+        gap: 30px;
+    }
+    .item{
+        box-shadow: 2px 2px 14px rgba(155, 0, 0, 0.686);
+    }
+    .item:hover{
+        box-shadow: 2px 2px 14px rgba(255, 255, 255, 0.686);
+    }
+    .item h2{
+        font-size: 16px;
+    }
+    .item p{
+        font-size: 14px;
+    }
 }

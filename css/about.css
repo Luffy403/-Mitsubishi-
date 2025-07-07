@@ -31,3 +31,31 @@
 .about-us-list ul li::marker{
     color: red;
 }
+/*Мобильная адаптация*/
+@media(max-width:400px){
+    .about-us{
+        margin: 30px auto;
+    }
+    .about-us h1{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .about-us-content{
+        width: 80%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+    .about-us-content p{
+        font-size: 14px;
+    }
+    .about-us-list h2{
+        font-size: 16px;
+    }
+    .about-us-list ul{
+        padding: 10px;
+    }
+    .about-us-list ul li{
+        padding: 10px 10px 10px 0;
+        font-size: 14px;
+    }
+}
