@@ -40,7 +40,7 @@ header nav{
     width: 50px;
     height: 50px;
 }
-header nav ul{
+header .nav-ul{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,6 +50,27 @@ header nav ul{
 header nav ul li a{
     color: #fff;
     font-size: 18px;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown button img{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+.dropdown-content{
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(20, 20, 20);
+    display: none;
+    right: 0;
+}
+.dropdown-content .drop{
+    padding: 5px;
+}
+.show{
+    display: block;
 }
 /*стили для тела*/
 body{
@@ -81,7 +102,8 @@ footer{
         padding: 10px;
     }
     header nav{
-        gap: 40px;
+        gap: 70px;
+        justify-content: space-between;
     }
     .header-zag{
         gap: 5px;
@@ -91,13 +113,16 @@ footer{
         height: 30px;
     }
     .header-zag h1{
-        font-size: 18px;
+        font-size: 20px;
     }
-    header nav ul{
-        gap: 10px;
+    header .nav-ul{
+        display: none;
     }
     header nav ul li a{
         font-size: 14px;
+    }
+    .dropdown button img{
+        display: block;
     }
     /*Подвал*/
     footer{

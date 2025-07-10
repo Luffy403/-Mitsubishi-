@@ -22,7 +22,7 @@
                 <img src="svg/icon.png" alt="Иконка">
                 <h1>Mitsubishi</h1>
             </a>
-            <ul>
+            <ul class="nav-ul">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="services.html">Услуги</a></li>
@@ -30,6 +30,19 @@
                 <li><a href="about.html">О нас</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
+            <div class="dropdown">
+                <button id="myButton" class="dropbtn">
+                    <img src="svg/Menu.svg" alt="меню">
+                </button>
+                <ul id="myDropdown" class="dropdown-content">
+                    <li class="drop"><a href="index.html">Главная</a></li>
+                    <li class="drop"><a href="catalog.html">Каталог</a></li>
+                    <li class="drop"><a href="services.html">Услуги</a></li>
+                    <li class="drop"><a href="stocks.html">Акции</a></li>
+                    <li class="drop"><a href="about.html">О нас</a></li>
+                    <li class="drop"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- Основной контент -->
@@ -79,6 +92,7 @@
                 </div>
             </div>
         </section>
+        <script src="js/dropdown.js"></script>
     </main>
     <!-- Подвал сайта -->
     <footer>
