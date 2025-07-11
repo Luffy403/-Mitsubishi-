@@ -96,14 +96,23 @@ footer{
     font-size: 25px;
 }
 /*Мобильная адаптация*/
+@media(max-width:500px){
+    /*Шапка*/
+    header nav{
+        gap: 70px;
+        justify-content: space-between;
+    }
+    header .nav-ul{
+        display: none;
+    }
+    .dropdown button img{
+        display: block;
+    }
+}
 @media (max-width:400px) {
     /*Шапка*/
     header{
         padding: 10px;
-    }
-    header nav{
-        gap: 70px;
-        justify-content: space-between;
     }
     .header-zag{
         gap: 5px;
@@ -115,14 +124,8 @@ footer{
     .header-zag h1{
         font-size: 20px;
     }
-    header .nav-ul{
-        display: none;
-    }
     header nav ul li a{
         font-size: 14px;
-    }
-    .dropdown button img{
-        display: block;
     }
     /*Подвал*/
     footer{
