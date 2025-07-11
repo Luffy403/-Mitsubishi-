@@ -53,6 +53,7 @@ header nav ul li a{
 }
 .dropdown{
     position: relative;
+    padding-right: 10px;
 }
 .dropdown button img{
     width: 25px;
@@ -64,10 +65,17 @@ header nav ul li a{
     z-index: 1;
     background-color: rgb(20, 20, 20);
     display: none;
-    right: 0;
+    right: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(155, 0, 0, 0.686);
 }
 .dropdown-content .drop{
     padding: 5px;
+    transition: all 0.4s ease;
+}
+.dropdown-content .drop:hover{
+    background-color: #424242;
+    transform: scale(1.03);
 }
 .show{
     display: block;
