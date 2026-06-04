@@ -1,61 +1,122 @@
-.about-us{
-    color: #fff;
-    max-width: 1200px;
+/* Страница "О нас" */
+
+.about__title {
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 390px) {
+  .about__title {
+    font-size: 20px;
+  }
+}
+
+/* Контент */
+.about__content {
+  background-color: rgba(225, 225, 225, 0.086);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+  box-shadow: 4px 4px 25px rgba(155, 0, 0, 0.686);
+}
+
+@media (max-width: 768px) {
+  .about__content {
+    padding: 25px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .about__content {
     width: 100%;
-    margin: 50px auto;
+    margin: 20px 0;
+    gap: 20px;
+    padding: 20px;
+  }
 }
-.about-us h1{
-    font-size: 30px;
+
+.about__text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
 }
-.about-us-content{
-    background-color: rgba(225, 225, 225, 0.086);
-    padding: 30px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 30px;
-    box-shadow: 4px 4px 25px rgba(155, 0, 0, 0.686);
+
+@media (max-width: 768px) {
+  .about__text {
+    font-size: 16px;
+  }
 }
-.about-us-content p{
+
+@media (max-width: 390px) {
+  .about__text {
+    font-size: 14px;
+  }
+}
+
+/* Блок преимуществ */
+.features {
+  margin-top: 10px;
+}
+
+.features__title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .features__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 390px) {
+  .features__title {
     font-size: 18px;
+  }
 }
-.about-us-list ul{
-    list-style: disc;
-    padding: 15px;
+
+.features__list {
+  list-style: disc;
+  padding: 15px;
 }
-.about-us-list ul li{
-    padding: 15px;
-    font-size: 18px;
+
+@media (max-width: 390px) {
+  .features__list {
+    padding: 10px;
+  }
 }
-.about-us-list ul li::marker{
-    color: red;
+
+.features__item {
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
 }
-/*Мобильная адаптация*/
-@media(max-width:400px){
-    .about-us{
-        margin: 30px auto;
-    }
-    .about-us h1{
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    .about-us-content{
-        width: 80%;
-        margin: 20px auto;
-        gap: 20px;
-    }
-    .about-us-content p{
-        font-size: 14px;
-    }
-    .about-us-list h2{
-        font-size: 16px;
-    }
-    .about-us-list ul{
-        padding: 10px;
-    }
-    .about-us-list ul li{
-        padding: 10px 10px 10px 0;
-        font-size: 14px;
-    }
+
+.features__item::marker {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .features__item {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .features__item {
+    padding: 10px 10px 10px 0;
+    font-size: 14px;
+  }
 }

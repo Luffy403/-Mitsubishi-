@@ -1,41 +1,94 @@
-.container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 50px auto;
-    color: #fff;
+/* Страница услуг */
+.services__container {
+  max-width: 1200px;
 }
-.services{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 30px;
+
+@media (max-width: 1400px) {
+  .services__container {
+    max-width: 1000px;
+  }
 }
-.services li{
-    background-color: #6c6c6c;
-    padding: 20px;
-    border-radius: 15px;
-    list-style-type: disc;
+@media (max-width: 1200px) {
+  .services__container {
+    max-width: 800px;
+  }
+}
+@media (max-width: 768px) {
+  .services__container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 390px) {
+  .services-page {
+    margin: 30px auto;
+    padding: 0 12px;
+  }
+}
+
+.services-page__title {
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .services-page__title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 390px) {
+  .services-page__title {
     font-size: 20px;
-    box-shadow: 2px 2px 15px rgba(155, 0, 0, 0.686);
+  }
 }
-.services li::marker{
-    color: red;
+
+/* Список услуг */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
 }
-/*Мобильная адаптация*/
-@media(max-width:400px){
-    .container{
-        margin: 30px auto;
-    }
-    .container h1{
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    .services{
-        width: 80%;
-        margin: 20px auto;
-    }
-    .services li{
-        font-size: 16px;
-        padding: 15px;
-    }
+
+@media (max-width: 768px) {
+  .services-list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .services-list {
+    margin: 20px 0;
+    gap: 20px;
+  }
+}
+
+.services-list__item {
+  background-color: #6c6c6c;
+  padding: 20px;
+  border-radius: 15px;
+  list-style-type: disc;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 2px 2px 15px rgba(155, 0, 0, 0.686);
+  margin-left: 20px;
+}
+
+.services-list__item::marker {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .services-list__item {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .services-list__item {
+    font-size: 14px;
+    padding: 14px;
+  }
 }

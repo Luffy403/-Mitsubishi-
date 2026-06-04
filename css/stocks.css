@@ -1,54 +1,121 @@
-.hero{
-    color: #fff;
-    max-width: 1200px;
-    width: 100%;
-    margin: 50px auto;
+/* Страница акций */
+
+@media (max-width: 1200px) {
+  .stocks-page__container {
+    max-width: 1000px;
+  }
 }
-.hero h1{
-    font-size: 30px;
+@media (max-width: 1024px) {
+  .stocks-page__container {
+    max-width: 800px;
+  }
 }
-.hero-container{
-    background-color: rgba(225, 225, 225, 0.086);
-    padding: 30px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    box-shadow: 8px 4px 25px rgba(155, 0, 0, 0.686);
+
+@media (max-width: 768px) {
+  .stocks-page__container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 390px) {
+  .stocks-page {
     margin: 30px auto;
+    padding: 0 12px;
+  }
 }
-.stocks ul{
-    list-style: disc;
-    padding-left: 20px;
+.stocks-page__title {
+  color: #fff;
+  font-size: 30px;
 }
-.stocks ul li{
-    padding: 15px;
+
+@media (max-width: 768px) {
+  .stocks-page__title {
+    font-size: 26px;
+  }
 }
-.stocks ul li::marker{
-    color: red;
+
+@media (max-width: 390px) {
+  .stocks-page__title {
+    font-size: 20px;
+  }
+}
+
+/* Контейнер акций */
+.stocks-container {
+  background-color: rgba(225, 225, 225, 0.086);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 8px 4px 25px rgba(155, 0, 0, 0.686);
+  margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+  .stocks-container {
+    padding: 25px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .stocks-container {
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 4px 4px 15px rgba(155, 0, 0, 0.686);
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* Блок акции */
+.stock {
+  color: #fff;
+}
+
+.stock__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .stock__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 390px) {
+  .stock__title {
     font-size: 18px;
+  }
 }
-/*Мобильная адаптация*/
-@media(max-width:400px){
-    .hero{
-        margin: 30px auto;
-    }
-    .hero h1{
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    .hero-container{
-        width: 80%;
-        margin: 20px auto;
-        box-shadow: 4px 4px 15px rgba(155, 0, 0, 0.686);
-        gap: 20px;
-        padding: 20px;
-    }
-    .hero-container h2{
-        font-size: 18px;
-    }
-    .stocks ul li{
-        padding: 5px;
-        font-size: 14px;
-    } 
+
+.stock__list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.stock__item {
+  padding: 15px;
+  font-size: 16px;
+}
+
+.stock__item::marker {
+  color: red;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .stock__item {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  .stock__item {
+    padding: 5px;
+    font-size: 14px;
+  }
 }

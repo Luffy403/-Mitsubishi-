@@ -1,149 +1,297 @@
-/*Сброс стилей*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: black;
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
-ul{
-    list-style: none;
+
+ul,
+ol {
+  list-style: none;
 }
-button{
-    border: none;
-    background: transparent;
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
-/*Стили для шапки*/
-header{
-    padding: 20px;
-    background-color: black;
+
+input,
+select {
+  border: none;
+  background: transparent;
+  outline: none;
 }
-header nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+
+/* Базовые настройки */
+.page {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.header-zag{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+
+section {
+  padding: 40px 0;
 }
-.header-zag h1{
-    color: #fff;
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 0;
+  }
 }
-.header-zag img{
-    width: 50px;
-    height: 50px;
+@media (max-width: 390px) {
+  .section {
+    padding: 20px 0;
+  }
 }
-header .nav-ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+/* Контейнер */
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+}
+
+/* Основной контент */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main--centered {
+  justify-content: center;
+}
+
+/* Шапка */
+.header {
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .header {
+    padding: 10px;
+  }
+}
+
+/* Навигация */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    gap: 70px;
+  }
+}
+
+@media (max-width: 390px) {
+  .navbar {
     gap: 50px;
-    flex-wrap: wrap;
+  }
 }
-header nav ul li a{
-    color: #fff;
-    font-size: 18px;
+
+/* Логотип */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
 }
-.dropdown{
-    position: relative;
-    padding-right: 10px;
+
+@media (max-width: 390px) {
+  .logo {
+    gap: 5px;
+  }
 }
-.dropdown button img{
-    width: 25px;
-    height: 25px;
+
+.logo__image {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 390px) {
+  .logo__image {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.logo__title {
+  color: #fff;
+  font-size: 28px;
+}
+
+@media (max-width: 390px) {
+  .logo__title {
+    font-size: 20px;
+  }
+}
+
+/* Навигационное меню */
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .nav {
     display: none;
+  }
 }
-.dropdown-content{
-    position: absolute;
-    z-index: 1;
-    background-color: rgb(20, 20, 20);
-    display: none;
-    right: 10px;
-    padding: 5px;
-    box-shadow: 2px 2px 10px rgba(155, 0, 0, 0.686);
+
+.nav__link {
+  color: #fff;
+  font-size: 18px;
+  transition: opacity 0.3s ease;
 }
-.dropdown-content .drop{
-    padding: 5px;
-    transition: all 0.4s ease;
+
+.nav__link:hover {
+  opacity: 0.8;
 }
-.dropdown-content .drop:hover{
-    background-color: #424242;
-    transform: scale(1.03);
+
+@media (max-width: 390px) {
+  .nav__link {
+    font-size: 14px;
+  }
 }
-.show{
+
+/* Выпадающее меню */
+.dropdown {
+  position: relative;
+  padding-right: 10px;
+}
+
+.dropdown__button {
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .dropdown__button {
     display: block;
+  }
 }
-/*стили для тела*/
-body{
-    background-color: black;
+
+.dropdown__image {
+  width: 100%;
+  height: 100%;
 }
-/*Стили для подвала*/
-footer{
-    padding: 30px;
+
+.dropdown__menu {
+  position: absolute;
+  z-index: 1;
+  background-color: #141414;
+  display: none;
+  right: 10px;
+  padding: 5px;
+  box-shadow: 2px 2px 10px rgba(155, 0, 0, 0.686);
 }
-.footer-zag{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+
+.dropdown__menu--show {
+  display: block;
 }
-.footer-zag img{
-    width: 40px;
-    height: 40px;
+
+.dropdown__item {
+  padding: 5px;
+  transition: all 0.4s ease;
+  color: #fff;
 }
-.footer-zag span{
-    color: #fff;
-    font-size: 25px;
+
+.dropdown__item:hover {
+  background-color: #424242;
+  transform: scale(1.03);
 }
-/*Мобильная адаптация*/
-@media(max-width:500px){
-    /*Шапка*/
-    header nav{
-        gap: 70px;
-        justify-content: space-between;
-    }
-    header .nav-ul{
-        display: none;
-    }
-    .dropdown button img{
-        display: block;
-    }
+
+.dropdown__link {
+  display: block;
+  white-space: nowrap;
 }
-@media (max-width:400px) {
-    /*Шапка*/
-    header{
-        padding: 10px;
-    }
-    .header-zag{
-        gap: 5px;
-    }
-    .header-zag img{
-        width: 30px;
-        height: 30px;
-    }
-    .header-zag h1{
-        font-size: 20px;
-    }
-    header nav ul li a{
-        font-size: 14px;
-    }
-    /*Подвал*/
-    footer{
-        padding: 10px;
-    }
-    .footer-zag img{
-        width: 30px;
-        height: 30px;
-    }
-    .footer-zag span{
-        font-size: 18px;
-    }
+
+/* Подвал */
+.footer {
+  padding: 20px 0;
+}
+
+@media (max-width: 390px) {
+  .footer {
+    padding: 10px;
+  }
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 390px) {
+  .footer__logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer__text {
+  color: #fff;
+  font-size: 25px;
+}
+
+@media (max-width: 390px) {
+  .footer__text {
+    font-size: 18px;
+  }
 }

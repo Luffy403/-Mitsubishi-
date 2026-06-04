@@ -1,61 +1,101 @@
-/* Стили для слайдера */
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
-    margin: 120px auto;
-    width: 100%;
-    gap: 40px;
+/* Слайдер */
+
+.slider__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.img-block {
-    position: relative;
-    max-width: 600px;
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
+
+.slider__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
 }
-.img-block img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
-    transition: all 0.5s ease;
+
+@media (max-width: 768px) {
+  .slider__content {
+    gap: 20px;
+  }
 }
-.block {
-    opacity: 1;
-    transform: translateX(0);
-    z-index: 1;
+
+@media (max-width: 390px) {
+  .slider__content {
+    gap: 10px;
+  }
 }
-.none-block {
-    opacity: 0;
-    transform: translateX(100%);
+
+.slider__frame {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
 }
-.slide {
-    border: none;
-    cursor: pointer;
-    padding: 10px;
+
+@media (max-width: 768px) {
+  .slider__frame {
+    height: 350px;
+  }
 }
-.slide img {
-    width: 50px;
-    height: 50px;
+
+@media (max-width: 390px) {
+  .slider__frame {
+    max-width: 280px;
+    height: 200px;
+  }
 }
-/*Мобильная адаптация*/
-@media(max-width:400px){
-    .container{
-        max-width: 360px;
-        gap: 20px;
-        width: 90%;
-    }
-    .img-block{
-        max-width: 280px;
-        height: 300px;
-    }
-    .slide{
-        padding: 0;
-    }
-    .slide img{
-        width: 30px;
-        height: 30px;
-    }
+
+.slider__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.5s ease;
+}
+
+.slider__image--active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.slider__image--hidden {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slider__button {
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.slider__button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 390px) {
+  .slider__button {
+    padding: 0;
+  }
+}
+
+.slider__button-image {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .slider__button-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 390px) {
+  .slider__button-image {
+    width: 30px;
+    height: 30px;
+  }
 }
